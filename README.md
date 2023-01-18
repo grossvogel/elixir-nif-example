@@ -9,6 +9,9 @@ Since this is just an example, I went into the tests of the Rust library to find
 
 ## Process
 
+### Prerequisites
+- Need Elixir and Rust installed. Both are available from `asdf`
+
 ### 1. Install Rustler
 
 Add dependency:
