@@ -75,6 +75,14 @@ mix test
 ```
 
 
+## Ways to bring in outside functionality
+- Call an API over HTTP (or something more exotic)
+- use `System.cmd/3` like [pdf_generator](https://github.com/gutschilla/elixir-pdf-generator/blob/eb9330249aa67f1dd833a20b65d379321b5a0b4f/lib/pdf_generator.ex#L151)
+- use `Port` like [FFMPEG in that Nerves talk](https://github.com/JacquiManzi/jacqui_manzi_elixir_conf_breaking_into_nerves/blob/5094da434f7e8b476ffeb2b387b54257d01db879/lib/hello_nerves/motion/worker.ex#L149)
+  - see also [this article](https://elixirschool.com/blog/til-ports)
+- make a Rust NIF with Rustler like [ex_secp256k1](https://github.com/omgnetwork/ex_secp256k1/blob/master/lib/ex_secp256k1/impl.ex) (crypto thing)
+- make a C NIF using `erl_nif` like [this article](https://andrealeopardi.com/posts/using-c-from-elixir-with-nifs/)
+
 ## References
 - https://github.com/google/highwayhash
 - https://github.com/nickbabcock/highway-rs/blob/master/tests/hash.rs#L4
